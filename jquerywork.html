@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+<head><title></title>
+<header>
+<h1>J-Query Work</h1>
+</header>
+</head>
+<nav>
+
+<ol style="list-style-type:none;">
+<a href="first.html">
+    <div id="col1">
+<li><img src="1.jpg" id="img">
+    Hide/Show Function</li>
+</div>
+</a>
+
+
+
+</ol>
+</nav>
+
+<style>
+a:link {
+    color:white;
+  text-decoration: none;
+}
+nav
+{
+    display:flex;
+    display: inline;
+}
+#img
+{
+   width: 100%;
+   height:100px;
+   border-radius:10px;
+}
+h1{
+    color:white;
+}
+#col1
+{
+background:#1c1f2b;
+border-radius:20px;
+width:25%;
+padding:15px;
+text-align:center;
+font-size:21px;
+color:white;
+border:0.1px black;
+}
+@property --angle{
+
+    syntax:"<angle>";
+        initial-value: 0deg;
+        inherits:false;
+
+}
+#col1::after , #col1::before
+{
+    content: '';
+    width: 27%;
+    height: 18%;
+    border-radius: 10%;
+    position: absolute;
+    background-image:conic-gradient(from var(--angle),transparent ,white ,blue) ;
+    top: 17.5%;
+    translate:-50% -50%;
+    z-index: -1; 
+    padding:1px;
+    animation:3s spin linear infinite;
+        
+    
+}
+
+#col1::before
+
+{
+    filter: blur(1.5rem);
+    
+
+}
+@keyframes spin{
+    form{
+        --angle:0deg;
+    }
+    to{
+        --angle:360deg;
+    }
+    
+}
+
+
+
+body
+{
+    background-color: #090a0e;
+}
+
+</style>
+<body>
+
+</body>
+</html>
+
+
