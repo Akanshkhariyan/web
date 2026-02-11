@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head><title></title>
+<header>
+<h1>J-Query Work</h1>
+</header>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" /> 
+</head>
+<div id="div1">
+   
+   
+    <a href="jfirst.html" class="card">
+
+        <img src="Images/1.jpg" id="img">
+        <p>Hide/Show Function</p>
+
+    </a>
+    
+    <a href="jsecond.html" class="card">
+
+        <img src="Images/2.jpg" id="img">
+        <p>Animation</p>
+
+    </a>
+    
+
+    
+</div>
+
+
+
+<style>
+a:link {
+    color:white;
+  text-decoration: none;
+}
+
+
+h1{
+    color:white;
+}
+#div1{
+    display:flex;
+    margin-top:40px;
+    margin-left:40px;
+    margin-right:40px;
+    gap: 30px;
+}
+
+.card
+{
+    position: relative;
+    display:block;
+    width:100%;
+    padding:15px;
+    text-align:center;
+    background:#1c1f2b;
+    border-radius:12px;
+    color:white;
+    text-decoration:none;
+}
+
+@property --angle{
+    syntax:"<angle>";
+    initial-value:0deg;
+    inherits:false;
+}
+
+.card::after,
+.card::before
+{
+    content:"";
+    position:absolute;
+    inset:-3px;
+    border-radius:14px;
+
+    background:conic-gradient(
+        from var(--angle),
+        transparent,
+        white,
+        blue
+    );
+
+    z-index:-1;
+    animation:spin 3s linear infinite;
+}
+
+.card::before
+{
+    filter:blur(25px);
+    opacity:0.6;
+}
+
+@keyframes spin
+{
+    from { --angle:0deg; }
+    to { --angle:360deg; }
+}
+
+#img
+{
+    width:100%;
+    
+    
+    border-radius:10px;
+}
+
+
+
+
+body
+{
+    background-color: #090a0e;
+}
+
+
+
+</style>
+<body>
+
+</body>
+</html>
+
+
