@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+
+    <script src="https://code.jquery.com/jquery-4.0.0.min.js" integrity="sha256-OaVG6prZf4v69dPg6PhVattBXkcOWQB62pdZ3ORyrao=" crossorigin="anonymous"></script>
+
+</head>
+<style>
+   body{
+    background-color: #090a0e;
+    color: white;
+   }
+  
+ol li
+{
+    list-style:none;
+    background-color: red;
+    width:100px;
+    padding: 20px;
+    text-align: center;
+    height: 30px;
+    margin-top: -20px;
+    display:none;
+   
+}
+
+ol
+{
+    
+   
+}
+
+#home
+{
+    background:grey;
+    width:100px;
+    padding-left:20px;
+    padding-right: 20px;
+    margin-left: 40px;
+    cursor: pointer;
+   
+}
+
+#home1
+{
+    
+    margin-top: -20px;
+}
+#hj
+{
+    padding: 0px;
+}
+
+#p1
+{
+   word-spacing: 30%;
+   font-size: 20px;
+   padding:40px;
+   
+}
+</style>
+<body>
+
+    <div>
+        <div id="home">
+            <h1>HOME</h1></div>
+            <div id="home1">
+            <ol>
+                <li>Home</li>
+                <li>Social</li>
+                <li>Create</li>
+            </ol>
+        </div>
+  </div>
+
+        
+
+<div id="p1">
+    <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, cupiditate provident! Nulla magnam labore officia, provident odio quos odit facere laboriosam iste, optio adipisci ducimus. Ipsa dicta quasi id atque.
+
+    </p>
+</div>
+
+    <script>
+
+    $(document).ready(function()
+    {
+     
+
+        $("#home"
+
+        ).click(
+            function()
+            {
+            $('ol li').slideToggle()
+            }
+    )
+        
+        }
+
+    )
+    
+
+
+
+
+
+    </script>
+</body>
+</html>
